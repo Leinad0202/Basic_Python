@@ -1,1 +1,1 @@
-Apenas anotações de estudo Python.
+⚠️ Apenas anotações de estudo Python. ⚠️
