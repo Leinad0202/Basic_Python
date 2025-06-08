@@ -1,0 +1,4 @@
+"""
+Tipo numérico
+
+"""
