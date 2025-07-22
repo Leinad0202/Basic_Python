@@ -1,11 +1,11 @@
 """
 Módulos Externos
 
-Utilizamos o gerneciador de pacotes Python chamado pip - Python Installer Package
+Utilizamos o gerenciador de pacotes Python chamado Pip - Python Installler Package
 
-Você pode conhecer todos os pacotes externos oficiais aqui > https://pypi.org
+Você pode conhecer todos os pacotes externos oficiais em: https://pypi.org
 
-colorama -> É utilizado para permitir impressão de textos coloridos no terminal.
+colorama -> É utilizado para permtir impressão de textos coloridos no termimal.
 
 Instalando um módulo:
 
@@ -17,11 +17,18 @@ pip install colorama
 
 # Utilizando o pacote instalado
 
-from colorama import init, fore
+from colorama import init, Fore
 
 init()
 
-print(fore.MAGENTA + 'Geek University')
-print(fore.BLUE + 'Geek University')
-
+print(Fore.MAGENTA + 'Geek University')
+print(Fore.BLUE + 'Geek University')
 """
+import pydf
+from colorama import init, Fore
+
+pdf = pydf.generate_pdf('<h1>Geek University</h1><br/><br/><strong>Programa&ccedil;&atilde;o em Python: Essencial</strong>')
+
+with open('test_doc.pdf', 'wb') as f:
+    f.write(pdf)
+

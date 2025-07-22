@@ -1,13 +1,14 @@
 """
-Utilitarios Python para auxiliar na programação
+Utilitários Python para que auxiliar na programação.
 
-dir -> Apresenta todos os atributos/ propriedades e funções/métodos disponiveis
-para determinardo tipo de dado ou variavel.
+dir -> Apresenta todos os atributos/propriedades e funções/métodos disponíveis
+para determinado tipo de dado ou variável.
 
-dir(tipo de dado/variavel)
+dir(tipo de dado/variável)
 
-help -> Apresenta a documentação/como utilizar os atributos/propriedades e funções/método disponiveis
+help -> Apresenta a documentação/como utilizar os atributos/propriedades e funções/métodos disponíveis
+para determinado tipo de dado ou variável.
 
-help(tipo de dado/variavel.propriedade)
-
+help(tido de dado/variavel.propriedade)
 """
+print(dir('geek'))

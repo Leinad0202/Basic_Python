@@ -1,9 +1,9 @@
 """
-Saindo de loops com breaks
+Saindo de loops com break
 
-Funciona da mesma forma que nas linguagens C ou Java.
+Funciona da mesma forma que nas linaugens C ou Java.
 
-Utilizando o break para sair de loops de maneira projetada.
+Utilizamos o break para sair de loops de maneira projetada.
 """
 
 # Exemplo 1
@@ -15,7 +15,8 @@ for numero in range(1, 11):
         print(numero)
 print('Sai do loop')
 
-#Exemplo 2
+
+# Exemplo 2
 
 while True:
     comando = input("Digite 'sair' para sair: ")

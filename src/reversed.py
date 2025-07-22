@@ -7,9 +7,9 @@ A função reverse() só funciona em listas.
 
 Já a função reversed() funciona com qualquer iterável.
 
-sua função é inverter o iterável.
+Sua função é inverter o iterável.
 
-A função reversed() retorna um iterável chamado list reverse iterator
+A função reversed() retorna um iterável chamado List Reverse Iterator
 
 """
 
@@ -20,22 +20,18 @@ lista = [1, 2, 3, 4, 5]
 res = reversed(lista)
 
 print(res)
-
 print(type(res))
 
-# Podemos converter o elemento retornado para lista, tupla ou conjunto.
+# Podemos converter o elemento retornado para uma Lista, Tupla ou Conjunto
 
 # Lista
-
 print(list(reversed(lista)))
 
 # Tupla
-
 print(tuple(reversed(lista)))
 
 # OBS: Em conjuntos, não definimos a ordem dos elementos
 # Conjunto (Set)
-
 print(set(reversed(lista)))
 
 # Podemos iterar sobre o reversed

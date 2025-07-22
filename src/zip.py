@@ -1,13 +1,12 @@
 """
 Zip
 
-Zip() -> Cria um iterável (Zip Object) que agrega elementos de cada um dos iteráveis passados como entrada em pares.
+zip() -> Cria um iterável (Zip Object) que agrega elemento de cada um dos iteráveis passados como entrada em pares.
 
-
-# Exemplos
+# Exmplos
 
 lista1 = [1, 2, 3]
-lista2 = [4, 5, 6]
+lista2 = [4, 5, 6, 12]
 
 zip1 = zip(lista1, lista2, 'abc')
 
@@ -18,6 +17,7 @@ print(type(zip1))
 
 print(list(zip1))
 
+
 zip1 = zip(lista1, lista2, 'abc')
 print(tuple(zip1))
 
@@ -27,14 +27,15 @@ print(set(zip1))
 zip1 = zip(lista1, lista2)
 print(dict(zip1))
 
+
 # OBS: O zip() utiliza como parâmetro o menor tamanho em iterável. Isso significa que se estiver
-# trabalhando com iteráveis de tamanhos diferentes, irá parar quando os elementos de menor
-# Iterável acabar.
+# trabalhando com iteráveis de tamanhos diferentes, irá parar quando os elementos do menor
+# iterável acarbar.
+
 lista3 = [7, 8, 9, 10, 11]
 
-zip1 = zip(lista1, lista3, lista2)
+zip1 = zip(lista3, lista2, lista1)
 print(list(zip1))
-
 
 # Podemos utilizar diferentes iteráveis com zip
 
@@ -45,14 +46,11 @@ dicionario = {'a': 11, 'b': 12, 'c': 13, 'd': 14, 'e': 15}
 zt = zip(tupla, lista, dicionario.values())
 print(list(zt))
 
-# lista de tuplas
+# Lista de tuplas
 
-dados = [(0,1), (1, 2), (2, 3), (3, 4), (4, 5)]
+dados = [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5)]
 
 print(list(zip(*dados)))
-
-
-
 """
 
 # Exemplos mais complexos
